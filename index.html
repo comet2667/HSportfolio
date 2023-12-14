@@ -1,0 +1,137 @@
+<!--경로
+C:\00_frontend\youtubeClone-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube Clone</title>
+        <!-- link tag 현재 문서에 외부 리소스 연결할 때 사용-->
+        <link rel="stylesheet" href="assets/style/header.css" />
+        <link rel="stylesheet" href="assets/style/nav.css" />
+        <link rel="stylesheet" href="assets/style/video.css" />
+        <style> /* .은 class, #은 id */
+
+            body {margin: 0; background-color: rgb(17, 17, 17);}
+            
+            
+        </style>
+    </head>
+    <body>
+        <!-- 시맨틱 태그 : 의미를 부여한 태그-->
+
+        <header class="header">
+        <!-- header tag : 페이지 상단에 소개 및 탐색에 도움을 주는 콘텐츠 영역-->
+        <!-- 제목/로고/검색 등 표시-->
+            <div class="left-section">
+                <img class="hamburger-menu" src="assets\icon\hamburger.svg" alt="메뉴버튼" />
+                <img class="youtube-logo" src="assets\icon\logo.svg" alt="로고" />
+            </div>
+            <div class="middle-section">
+                <input type="text" class="search-bar" placeholder="검색"/>
+                <button class="search-button">
+                    <img class="search-icon" src="assets\icon\search.svg" />
+                    <div class="tooltip">검색</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <img class="user-icon" src="assets\icon\user.svg" alt="사용자">
+            </div>
+        </header>
+
+        <nav class="nav">
+            <!--nav(navigation) tag : 다른 페이지 연결을 의미, 메뉴/목차/색인 등에 사용-->
+            <div class="sidebar-link">
+                <img class="sidebar-img" src="assets\icon\home.svg">
+                <div class="sidebar-text">홈</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-img" src="assets\icon\shorts.svg">
+                <div class="sidebar-text">쇼츠</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-img" src="assets\icon\good.svg">
+                <div class="sidebar-text">구독</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-img" src="assets\icon\setting.svg">
+                <div class="sidebar-text">설정</div>
+            </div>
+        </nav>
+
+        <main>
+            <!--main tag : 콘텐츠 내용을 표시하는 영역, 제목/검색/메뉴 등을 포함하지 않도록 함
+            section tag: 콘텐츠를 주제별로 묶을 때 사용하는 태그-->
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="assets\icon\thumbnail.png." />
+                        <div class="video-time">03:51</div>
+                    </div>
+
+                    <div class="video-info-grid">
+                        <div class="channel-icon">
+                            <img class="user-icon" src="assets\icon\user.svg" alt="사용자">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">빵빵이의 포장마차</p>
+                            <p class="video-author">빵빵이의 일상</p>
+                            <p class="video-stats">조회수 830만회 &#183; <!--특수문자--> 4개월전</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="assets\icon\thumbnail.png." />
+                        <div class="video-time">03:51</div>
+                    </div>
+
+                    <div class="video-info-grid">
+                        <div class="channel-icon">
+                            <img class="user-icon" src="assets\icon\user.svg" alt="사용자">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">빵빵이의 포장마차</p>
+                            <p class="video-author">빵빵이의 일상</p>
+                            <p class="video-stats">조회수 830만회 &#183; <!--특수문자--> 4개월전</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="assets\icon\thumbnail.png." />
+                        <div class="video-time">03:51</div>
+                    </div>
+
+                    <div class="video-info-grid">
+                        <div class="channel-icon">
+                            <img class="user-icon" src="assets\icon\user.svg" alt="사용자">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">빵빵이의 포장마차</p>
+                            <p class="video-author">빵빵이의 일상</p>
+                            <p class="video-stats">조회수 830만회 &#183; <!--특수문자--> 4개월전</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="assets\icon\thumbnail.png." />
+                        <div class="video-time">03:51</div>
+                    </div>
+
+                    <div class="video-info-grid">
+                        <div class="channel-icon">
+                            <img class="user-icon" src="assets\icon\user.svg" alt="사용자">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">빵빵이의 포장마차</p>
+                            <p class="video-author">빵빵이의 일상</p>
+                            <p class="video-stats">조회수 830만회 &#183; <!--특수문자--> 4개월전</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

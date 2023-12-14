@@ -1,0 +1,86 @@
+            .video-grid {
+                display: grid; /*화면 구조를 그리드 형식으로 */
+                columns: 16px; /*열(column)의 간격 */
+                row-gap: 40px; /*행(row)의 의 간격 */
+                padding-left : 300px;
+                padding-top: 55px;
+                
+            }
+/* @media (조건) : 조건에 따라 스타일 적용 */
+
+        @media (max-width: 484px) { /*width의 최대 길이가 484px 까지 스타일 적용
+             - grid-template-columns : 그리드 형태 정의. 열의 배치.
+              fr (fraction) : 적용한 값 비율대로 행 또는 열의 크기를 분리*/
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        
+        }
+        @media (min-width: 485px) and (max-width: 749px) { /* width 길이의 볌위 : 485~749 */
+            .video-grid {
+                grid-template-columns: 1fr 1fr; /* 열을 분리 */
+            }
+        }
+        /* width 길이의 볌위 : 750px~999px */
+        @media (min-width: 750px) and (max-width: 999px) {
+            .video-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        /* width 길이의 범위 : 1000px 이상 */
+        @media (min-width: 1000px) {
+            .video-grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+            /*
+            -position : 위치에 대한 스타일 적용 시 기준점 설정
+                *static : 기준 없음. 배치 불가. (default)
+                *relative : 요소의 기존 위치 기준 비치
+                *absolute : 부모(조상) 요소 기준 배치
+                *fixed : 뷰포트 기준 배치
+                        -> 뷰포트(viewport) : meta 태그에서 설정한 기준
+            */
+
+            .thumbnail-row {
+                position: relative;
+                margin: 8px 8px 0px 8px;
+            }
+            .thumbnail {width: 100%;}
+            .video-time {position: absolute; 
+                        bottom: 8px; 
+                        right: 5px; 
+                        
+                        font-size: 12px; 
+                        font-weight: 500;
+                        color: white;
+                        background-color: black;
+                        padding: 2px 4px;}
+            .video-info-grid {
+                display: grid; 
+                grid-template-columns: 50px 1fr;
+                background-color: black;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+            /*
+            .channel-icon img : channel-icon 클래스 내 모든 img 태그
+            .channel-icon > img : channel-icon 클래스 바로 위치한 img 태그
+            */
+            .video-info-grid img {
+                width: 36px;
+                border-radius: 50px;
+            }
+            .video-title {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 10px;
+                color: white;
+            }
+            .video-author, .video-stats { 
+                color: white;
+                font-size: 12px;
+            }
+
+            
